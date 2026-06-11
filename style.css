@@ -649,11 +649,20 @@ a { text-decoration: none; color: inherit; }
   gap: 20px;
 }
 
+.rejoins-fo-link {
+  display: block;
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.rejoins-fo-link:hover {
+  opacity: 0.85;
+  transform: scale(1.04);
+}
+
 .rejoins-fo-logo {
-  width: 120px;
+  width: 160px;
   height: auto;
   object-fit: contain;
-  opacity: 0.85;
 }
 
 .rejoins-quote {
@@ -701,12 +710,10 @@ a { text-decoration: none; color: inherit; }
 }
 
 .footer-logo {
-  height: 52px;
+  height: 72px;
   width: auto;
   object-fit: contain;
   margin-bottom: 14px;
-  filter: brightness(0) invert(1);
-  opacity: 0.7;
 }
 
 .footer-devise {
@@ -762,29 +769,24 @@ a { text-decoration: none; color: inherit; }
   position: relative;
 }
 
-/* Logo central */
+/* Logo central — sans cercle */
 .bubble-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: var(--white);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12), 0 0 0 6px rgba(232,32,42,0.08);
+  width: 110px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
-  overflow: hidden;
 }
 
 .bubble-logo {
-  width: 88px;
-  height: 88px;
+  width: 110px;
+  height: 110px;
   object-fit: contain;
-  border-radius: 50%;
 }
 
 /* Bulles mots-clés */

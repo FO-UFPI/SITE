@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FO Énergie UFPI — Votre syndicat dans le secteur de l'énergie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <img src="logo_fo_ufpi.jpeg" alt="FO Énergie UFPI" class="logo-ufpi" />
+      </div>
+      <nav class="header-nav">
+        <a href="#concret">Ce qu'on fait pour vous</a>
+        <a href="#qui">Vos représentants</a>
+        <a href="#faq">Vos questions</a>
+        <a href="#rejoins">Nous rejoindre</a>
+      </nav>
+      <div class="header-devise">
+        <span class="devise-text">Agir, <em>ne pas subir !</em></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-eyebrow">FO Énergie UFPI</p>
+        <h1 class="hero-title">
+          Un syndicat<br />
+          à vos côtés,<br />
+          <span class="highlight-red">chaque jour</span>
+        </h1>
+        <p class="hero-subtitle">
+          Salaire, conditions de travail, droits, protection… 
+          Découvrez comment FO Énergie UFPI agit concrètement 
+          pour vous dans votre vie professionnelle.
+        </p>
+        <a href="#concret" class="btn-hero">Découvrir nos actions</a>
+      </div>
+      <div class="hero-illustration">
+        <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+          <!-- Fond de scène -->
+          <rect x="30" y="200" width="360" height="6" rx="3" fill="#E8E8E8"/>
+
+          <!-- Personnage gauche (agent) -->
+          <g class="perso perso-agent">
+            <!-- Corps -->
+            <rect x="80" y="130" width="44" height="70" rx="8" fill="#00A0D6"/>
+            <!-- Tête -->
+            <circle cx="102" cy="112" r="22" fill="#FDDCB5"/>
+            <!-- Cheveux -->
+            <path d="M80 105 Q102 88 124 105" fill="#5C3D2E"/>
+            <!-- Bras gauche levé -->
+            <line x1="80" y1="155" x2="52" y2="128" stroke="#FDDCB5" stroke-width="10" stroke-linecap="round"/>
+            <!-- Bras droit -->
+            <line x1="124" y1="155" x2="148" y2="165" stroke="#FDDCB5" stroke-width="10" stroke-linecap="round"/>
+            <!-- Jambes -->
+            <rect x="85" y="196" width="14" height="10" rx="3" fill="#1A3A5C"/>
+            <rect x="105" y="196" width="14" height="10" rx="3" fill="#1A3A5C"/>
+            <!-- Badge FO sur la veste -->
+            <rect x="96" y="148" width="18" height="12" rx="3" fill="#E8202A"/>
+            <text x="105" y="157" text-anchor="middle" font-size="7" font-weight="900" fill="white" font-family="Arial">FO</text>
+          </g>
+
+          <!-- Bulle dialogue FO rep -->
+          <g class="bulle-fo reveal-svg" style="opacity:0">
+            <rect x="136" y="70" width="170" height="52" rx="10" fill="#E8202A"/>
+            <polygon points="148,122 136,138 162,122" fill="#E8202A"/>
+            <text x="221" y="91" text-anchor="middle" font-size="11" fill="white" font-weight="600" font-family="Inter,Arial">Je négocie pour vous :</text>
+            <text x="221" y="108" text-anchor="middle" font-size="11" fill="white" font-family="Inter,Arial">salaires, droits, conditions</text>
+          </g>
+
+          <!-- Personnage droit (agent lambda) -->
+          <g class="perso perso-worker">
+            <!-- Corps -->
+            <rect x="286" y="135" width="44" height="65" rx="8" fill="#F5F5F5"/>
+            <!-- Tête -->
+            <circle cx="308" cy="117" r="21" fill="#FDDCB5"/>
+            <!-- Cheveux courts -->
+            <path d="M287 110 Q308 95 329 110 L329 105 Q308 88 287 105 Z" fill="#2C2C2C"/>
+            <!-- Bras gauche -->
+            <line x1="286" y1="158" x2="262" y2="168" stroke="#FDDCB5" stroke-width="10" stroke-linecap="round"/>
+            <!-- Bras droit levé (interrogatif) -->
+            <line x1="330" y1="155" x2="352" y2="128" stroke="#FDDCB5" stroke-width="10" stroke-linecap="round"/>
+            <!-- Jambes -->
+            <rect x="291" y="196" width="14" height="10" rx="3" fill="#555"/>
+            <rect x="311" y="196" width="14" height="10" rx="3" fill="#555"/>
+          </g>
+
+          <!-- Bulle question agent -->
+          <g class="bulle-agent reveal-svg" style="opacity:0; animation-delay:.7s">
+            <rect x="240" y="42" width="152" height="46" rx="10" fill="white"/>
+            <rect x="240" y="42" width="152" height="46" rx="10" fill="none" stroke="#E8202A" stroke-width="1.5"/>
+            <polygon points="330,88 318,88 324,102" fill="white"/>
+            <polygon points="330,88 318,88 324,103" fill="none" stroke="#E8202A" stroke-width="1.5"/>
+            <text x="316" y="62" text-anchor="middle" font-size="11" fill="#333" font-family="Inter,Arial">Qui peut m'aider</text>
+            <text x="316" y="78" text-anchor="middle" font-size="11" fill="#333" font-family="Inter,Arial">si j'ai un problème ?</text>
+          </g>
+
+          <!-- Connexion / lien entre les deux -->
+          <g class="lien reveal-svg" style="opacity:0; animation-delay:1.4s">
+            <line x1="155" y1="165" x2="275" y2="165" stroke="#00A896" stroke-width="2.5" stroke-dasharray="6 4"/>
+            <circle cx="215" cy="165" r="18" fill="#00A896"/>
+            <text x="215" y="161" text-anchor="middle" font-size="9" fill="white" font-weight="700" font-family="Inter,Arial">FO</text>
+            <text x="215" y="173" text-anchor="middle" font-size="8" fill="white" font-family="Inter,Arial">UFPI</text>
+          </g>
+
+          <!-- Éléments déco énergie (petits) -->
+          <!-- Éolienne stylisée -->
+          <g transform="translate(350,100) scale(0.6)" opacity="0.35">
+            <line x1="20" y1="80" x2="20" y2="20" stroke="#00A0D6" stroke-width="3"/>
+            <line x1="20" y1="20" x2="20" y2="-10" stroke="#00A0D6" stroke-width="3"/>
+            <line x1="20" y1="20" x2="50" y2="40" stroke="#00A0D6" stroke-width="3"/>
+            <line x1="20" y1="20" x2="-10" y2="40" stroke="#00A0D6" stroke-width="3"/>
+          </g>
+          <!-- Éclair stylisé -->
+          <g transform="translate(48,95)" opacity="0.3">
+            <polygon points="14,0 6,18 12,18 4,36 20,14 13,14" fill="#E8202A"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Bandeau valeurs -->
+    <div class="hero-values">
+      <div class="value-item">
+        <span class="value-icon">🤝</span>
+        <span>Solidarité</span>
+      </div>
+      <div class="value-sep"></div>
+      <div class="value-item">
+        <span class="value-icon">⚖️</span>
+        <span>Indépendance</span>
+      </div>
+      <div class="value-sep"></div>
+      <div class="value-item">
+        <span class="value-icon">💪</span>
+        <span>Efficacité</span>
+      </div>
+      <div class="value-sep"></div>
+      <div class="value-item">
+        <span class="value-icon">🔍</span>
+        <span>Transparence</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CE QU'ON FAIT POUR VOUS -->
+  <section class="section-concret" id="concret">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Concrètement</p>
+        <h2 class="section-title">Ce que FO fait <span class="highlight-red">pour vous</span></h2>
+        <p class="section-intro">Que vous soyez adhérent ou non, les représentants FO agissent au quotidien pour améliorer vos conditions de travail et défendre vos droits.</p>
+      </div>
+
+      <div class="actions-grid">
+
+        <div class="action-card reveal" data-delay="0">
+          <div class="action-icon-wrap" style="--acolor: #E8202A;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 24h24M12 16h16M12 32h20" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="38" cy="34" r="7" fill="currentColor" opacity=".15"/>
+              <path d="M35 34h6M38 31v6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="action-title">Négocier vos salaires</h3>
+          <p class="action-text">Chaque année, FO négocie lors des <strong>NAO (Négociations Annuelles Obligatoires)</strong> pour obtenir des augmentations de salaire et des primes. Les accords signés s'appliquent à <strong>tous les salariés</strong>.</p>
+          <div class="action-example">
+            <span class="ex-label">Exemple concret</span>
+            <span>Revalorisation du point d'indice, primes de résultat, intéressement</span>
+          </div>
+        </div>
+
+        <div class="action-card reveal" data-delay="100">
+          <div class="action-icon-wrap" style="--acolor: #00A0D6;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6L8 14v10c0 11 8 20 16 22 8-2 16-11 16-22V14L24 6z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M17 24l5 5 10-9" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="action-title">Vous défendre individuellement</h3>
+          <p class="action-text">Vous faites face à une sanction injuste, un licenciement ou un conflit avec votre hiérarchie ? Un représentant FO peut vous <strong>accompagner et vous assister</strong> lors des entretiens avec l'employeur.</p>
+          <div class="action-example">
+            <span class="ex-label">Exemple concret</span>
+            <span>Assistance à l'entretien préalable, contestation d'une mise à pied</span>
+          </div>
+        </div>
+
+        <div class="action-card reveal" data-delay="200">
+          <div class="action-icon-wrap" style="--acolor: #00A896;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="10" width="32" height="28" rx="4" stroke="currentColor" stroke-width="3"/>
+              <path d="M16 20h16M16 27h10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="38" cy="12" r="6" fill="currentColor"/>
+              <path d="M36 12h4M38 10v4" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="action-title">Améliorer vos conditions de travail</h3>
+          <p class="action-text">Télétravail, horaires, charge de travail, sécurité… FO siège dans les instances et <strong>impose des discussions</strong> sur vos conditions de travail. Vos remontées de terrain font bouger les choses.</p>
+          <div class="action-example">
+            <span class="ex-label">Exemple concret</span>
+            <span>Accord télétravail, aménagement d'horaires, plan de prévention des risques</span>
+          </div>
+        </div>
+
+        <div class="action-card reveal" data-delay="300">
+          <div class="action-icon-wrap" style="--acolor: #E8202A;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8C15.163 8 8 15.163 8 24s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8z" stroke="currentColor" stroke-width="3"/>
+              <path d="M24 16v8l5 3" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 8l4 4M40 8l-4 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity=".4"/>
+            </svg>
+          </div>
+          <h3 class="action-title">Vous informer en temps réel</h3>
+          <p class="action-text">Nouvelles lois, accords signés, résultats des négociations… FO vous tient informé via des <strong>communiqués réguliers</strong>. Vous savez ce qui se passe et ce qui a été obtenu pour vous.</p>
+          <div class="action-example">
+            <span class="ex-label">Exemple concret</span>
+            <span>Compte-rendu des réunions CSE, tracts explicatifs, notes d'information</span>
+          </div>
+        </div>
+
+        <div class="action-card reveal" data-delay="400">
+          <div class="action-icon-wrap" style="--acolor: #00A0D6;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="8" stroke="currentColor" stroke-width="3"/>
+              <circle cx="34" cy="18" r="8" stroke="currentColor" stroke-width="3"/>
+              <path d="M6 38c0-6.627 5.373-12 12-12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M28 26c3.5-1.3 7.5-1.3 11 0" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              <path d="M22 38c0-3.5 2-6.6 5-8.3" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="action-title">Porter votre voix collectivement</h3>
+          <p class="action-text">Vos préoccupations remontent jusqu'aux instances paritaires et aux directions. FO s'assure que <strong>vos intérêts sont représentés</strong> lors des grandes décisions : restructurations, plans de formation, politique RH.</p>
+          <div class="action-example">
+            <span class="ex-label">Exemple concret</span>
+            <span>Avis sur un plan de sauvegarde de l'emploi, consultation sur le DUERP</span>
+          </div>
+        </div>
+
+        <div class="action-card reveal" data-delay="500">
+          <div class="action-icon-wrap" style="--acolor: #00A896;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 24l6 6 14-14" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="3"/>
+            </svg>
+          </div>
+          <h3 class="action-title">Vous conseiller gratuitement</h3>
+          <p class="action-text">Question sur vos droits, votre contrat, une clause qui vous semble floue ? Les représentants FO répondent à vos questions et vous orientent. Un <strong>accompagnement personnalisé</strong>, confidentiel et sans engagement.</p>
+          <div class="action-example">
+            <span class="ex-label">Exemple concret</span>
+            <span>Conseil sur la rupture conventionnelle, explication d'une clause de mobilité</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VOS REPRÉSENTANTS -->
+  <section class="section-qui" id="qui">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Vos interlocuteurs</p>
+        <h2 class="section-title">Qui vous <span class="highlight-teal">représente ?</span></h2>
+        <p class="section-intro">Plusieurs types de représentants agissent pour vous selon leurs attributions. Voici comment les identifier et ce que vous pouvez attendre de chacun.</p>
+      </div>
+
+      <div class="reps-list">
+
+        <div class="rep-row reveal" data-delay="0">
+          <div class="rep-badge" style="--badge-color: #E8202A;">CSE</div>
+          <div class="rep-info">
+            <h3>Comité Social et Économique</h3>
+            <p>Les élus CSE sont vos représentants <strong>élus par les salariés</strong>. Ils siègent dans l'instance principale et ont un droit de regard sur les décisions économiques, sociales et les conditions de travail de l'entreprise. Ils peuvent exercer un droit d'alerte en cas de danger grave.</p>
+          </div>
+          <div class="rep-contact">
+            <span class="rep-how">Comment le contacter ?</span>
+            <span>Réunions mensuelles ouvertes, permanence syndicale, email dédié</span>
+          </div>
+        </div>
+
+        <div class="rep-row reveal" data-delay="100">
+          <div class="rep-badge" style="--badge-color: #00A0D6;">DS</div>
+          <div class="rep-info">
+            <h3>Délégué Syndical</h3>
+            <p>Le délégué syndical est <strong>désigné par FO</strong> pour négocier les accords collectifs avec la direction. Il signe (ou refuse de signer) les accords au nom du syndicat. C'est lui qui porte les revendications lors des NAO et des négociations thématiques.</p>
+          </div>
+          <div class="rep-contact">
+            <span class="rep-how">Comment le contacter ?</span>
+            <span>Section syndicale FO, permanence, tracts de contact</span>
+          </div>
+        </div>
+
+        <div class="rep-row reveal" data-delay="200">
+          <div class="rep-badge" style="--badge-color: #00A896;">CSSCT</div>
+          <div class="rep-info">
+            <h3>Commission Santé, Sécurité et Conditions de Travail</h3>
+            <p>Les membres de la CSSCT traitent spécifiquement des <strong>risques professionnels, accidents du travail et maladies professionnelles</strong>. Ils inspectent les lieux de travail, enquêtent sur les incidents et proposent des améliorations concrètes.</p>
+          </div>
+          <div class="rep-contact">
+            <span class="rep-how">Comment le contacter ?</span>
+            <span>En cas d'accident, de risque ou de problème de santé au travail</span>
+          </div>
+        </div>
+
+        <div class="rep-row reveal" data-delay="300">
+          <div class="rep-badge" style="--badge-color: #E8202A;">RSS</div>
+          <div class="rep-info">
+            <h3>Représentant de Section Syndicale</h3>
+            <p>Le RSS est le <strong>relais local de FO</strong> dans l'entreprise. Il diffuse l'information syndicale, organise des réunions et fait le lien entre les adhérents et les représentants. C'est souvent lui que vous rencontrerez en premier.</p>
+          </div>
+          <div class="rep-contact">
+            <span class="rep-how">Comment le contacter ?</span>
+            <span>Il vient à vous ! Tracts, affichage syndical, présence terrain</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-faq" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Vos questions</p>
+        <h2 class="section-title">Vous vous demandez <span class="highlight-red">si FO est fait pour vous ?</span></h2>
+        <p class="section-intro">Voici les questions que se posent souvent les agents qui envisagent de nous rejoindre.</p>
+      </div>
+
+      <div class="faq-grid">
+
+        <div class="faq-item reveal" data-delay="0">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">?</span>
+            <span>Adhérer à FO, est-ce que ça m'engage à quelque chose ?</span>
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Adhérer à FO, c'est simplement <strong>rejoindre un syndicat indépendant</strong> qui défend vos intérêts. Vous n'avez aucune obligation de participer à des actions ou de militer. Vous bénéficiez d'un accompagnement, d'informations et d'un soutien en cas de besoin — c'est tout.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-delay="100">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">?</span>
+            <span>Mon employeur peut-il savoir que je suis syndiqué ?</span>
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Non. L'appartenance syndicale est une information <strong>strictement confidentielle</strong>, protégée par la loi. Votre employeur n'a pas le droit de chercher à connaître votre appartenance syndicale, ni de vous discriminer pour ce motif. La discrimination syndicale est un délit.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-delay="200">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">?</span>
+            <span>Est-ce que FO défend aussi les non-syndiqués ?</span>
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Oui. Les accords collectifs négociés par FO s'appliquent à <strong>tous les salariés</strong>, syndiqués ou non. C'est le principe même de la représentation collective. En revanche, pour un accompagnement individuel (assistance lors d'un entretien, conseil personnalisé), adhérer à FO vous garantit un soutien plus direct et prioritaire.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-delay="300">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">?</span>
+            <span>Combien coûte l'adhésion à FO ?</span>
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>La cotisation syndicale représente environ <strong>1% de votre salaire mensuel net</strong>. Elle est <strong>déductible des impôts à 66%</strong>, ce qui réduit considérablement son coût réel. Pour en connaître le montant exact pour votre situation, contactez directement votre section syndicale FO.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-delay="400">
+          <button class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">?</span>
+            <span>Pourquoi FO plutôt qu'un autre syndicat ?</span>
+            <span class="faq-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>FO se distingue par son <strong>indépendance totale</strong> vis-à-vis des partis politiques et du patronat. FO Énergie UFPI est spécialisée dans votre secteur : ses représentants connaissent vos métiers, vos conventions collectives et les enjeux propres aux industries de l'énergie. Ce n'est pas un syndicat généraliste.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA REJOINS-NOUS -->
+  <section class="section-rejoins" id="rejoins">
+    <div class="container">
+      <div class="rejoins-inner reveal">
+        <div class="rejoins-text">
+          <p class="section-eyebrow" style="text-align:left;">Prochaine étape</p>
+          <h2 class="rejoins-title">Rejoindre FO Énergie UFPI</h2>
+          <p class="rejoins-subtitle">Prenez contact avec votre section syndicale locale. Un représentant vous répondra, sans engagement, pour vous expliquer comment FO peut vous accompagner dans votre situation.</p>
+          <ul class="rejoins-points">
+            <li><span class="point-check">✓</span> Adhésion simple et confidentielle</li>
+            <li><span class="point-check">✓</span> Cotisation déductible des impôts</li>
+            <li><span class="point-check">✓</span> Accompagnement personnalisé</li>
+            <li><span class="point-check">✓</span> Syndicat indépendant, spécialisé énergie</li>
+          </ul>
+          <div class="rejoins-btns">
+            <a href="mailto:contact@fo-energie.fr" class="btn-rejoins btn-primary">Nous contacter</a>
+            <a href="#concret" class="btn-rejoins btn-secondary">Revoir nos actions</a>
+          </div>
+        </div>
+        <div class="rejoins-visual">
+          <img src="LOGO_FO.png" alt="Force Ouvrière" class="rejoins-fo-logo" />
+          <div class="rejoins-quote">
+            <p>"Un syndicat fort, c'est la garantie que votre voix compte dans l'entreprise."</p>
+            <span class="rejoins-devise">— Agir, ne pas subir !</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo_fo_ufpi.jpeg" alt="FO Énergie UFPI" class="footer-logo" />
+        <p class="footer-devise"><em>Agir, ne pas subir !</em></p>
+      </div>
+      <div class="footer-links">
+        <p class="footer-section-title">Navigation</p>
+        <a href="#concret">Ce qu'on fait pour vous</a>
+        <a href="#qui">Vos représentants</a>
+        <a href="#faq">Vos questions</a>
+        <a href="#rejoins">Nous rejoindre</a>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-section-title">Contact</p>
+        <p>FO Énergie UFPI</p>
+        <p>Fédération Nationale des Industries<br />Électriques, Gazières et du Pétrole — FO</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 FO Énergie UFPI — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
